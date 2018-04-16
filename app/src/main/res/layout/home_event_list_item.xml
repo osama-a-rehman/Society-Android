@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/eventImageView"
+        android:src="@drawable/acm_orientation"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:text="WED, FEB 15, 7:00 PM"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:textColor="#5c5c5c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/eventImageView"
+        android:id="@+id/eventDateTextView" />
+
+    <TextView
+        android:text="ACM-Orientation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eventDateTextView"
+        android:layout_alignLeft="@+id/eventDateTextView"
+        android:layout_alignStart="@+id/eventDateTextView"
+        android:id="@+id/eventNameTextView"
+        android:layout_marginTop="10dp"
+        android:textSize="24sp"
+        android:textColor="#363636"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:text="NED University of Engr. and Technology"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eventNameTextView"
+        android:layout_alignLeft="@+id/eventNameTextView"
+        android:layout_alignStart="@+id/eventNameTextView"
+        android:id="@+id/eventVenueTextView"
+        android:textColor="#5c5c5c"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@+id/eventVenueTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:text="#Orientation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/eventTagTextView1"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="4dp"
+            android:textColor="#5c5c5c"
+            android:textSize="16sp" />
+
+        <TextView
+            android:text="#ACM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/eventTagTextView2"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textColor="#5c5c5c"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="fitCenter"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/share_icon"
+            android:id="@+id/eventShareImageButton"
+            android:layout_gravity="right"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

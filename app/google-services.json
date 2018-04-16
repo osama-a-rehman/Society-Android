@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "232143390110",
+    "firebase_url": "https://society-c82eb.firebaseio.com",
+    "project_id": "society-c82eb",
+    "storage_bucket": "society-c82eb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:232143390110:android:3880bed0e2865e44",
+        "android_client_info": {
+          "package_name": "osama.ned.society"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "232143390110-rhpn214o60qt64cflkohmo2ig593ben5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBehSm6EcaxqiiarmGn3FnrxOFZdWi6RJE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

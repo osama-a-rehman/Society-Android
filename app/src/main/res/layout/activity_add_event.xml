@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_event"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1d1b1b"
+    tools:context="osama.ned.society.Activities.AddEventActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/eventPictureLayout"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/bg_add_event_select_image">
+
+            <TextView
+                android:id="@+id/clickToAddEventPictureTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Click to add Event Picture"
+                android:textColor="#FFFFFF"
+                android:textSize="26sp" />
+
+            <ImageView
+                android:id="@+id/addEventPictureImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/clickToChangeImageTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/eventPictureLayout"
+            android:layout_alignStart="@+id/eventPictureLayout"
+            android:layout_below="@id/eventPictureLayout"
+            android:text="* Click to change Image"
+            android:textColor="#ecdf29"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/eventNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/eventPictureLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/login_edittext_underlined"
+            android:drawableLeft="@drawable/email_new"
+            android:drawablePadding="15dp"
+            android:fontFamily="sans-serif"
+            android:hint="Event Name"
+            android:inputType="textEmailAddress"
+            android:paddingBottom="5dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#c6c6c6"
+            android:textCursorDrawable="@null"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/eventDescriptionEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/eventNameEditText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/login_edittext_underlined"
+            android:drawableLeft="@drawable/lock_new"
+            android:drawablePadding="15dp"
+            android:fontFamily="sans-serif"
+            android:hint="Event Description"
+            android:inputType="textMultiLine"
+            android:paddingBottom="5dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#c6c6c6"
+            android:textCursorDrawable="@null"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/addEventShowDetailsPanel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/eventDescriptionEditText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:paddingTop="7dp"
+                android:text="@string/sign_up_add_more_details"
+                android:textColor="#FFFFFF"
+                android:textSize="26sp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:src="@drawable/white_down_arrow" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/addEventMoreDetailsPanel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/eventDescriptionEditText"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/eventVenueEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/login_edittext_underlined"
+                android:drawableLeft="@drawable/email_new"
+                android:drawablePadding="15dp"
+                android:fontFamily="sans-serif"
+                android:hint="Event Venue"
+                android:paddingBottom="5dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#c6c6c6"
+                android:textCursorDrawable="@null"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/eventDatePickerEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/login_edittext_underlined"
+                android:drawableLeft="@drawable/lock_new"
+                android:drawablePadding="15dp"
+                android:focusableInTouchMode="false"
+                android:fontFamily="sans-serif"
+                android:hint="Event Date"
+                android:paddingBottom="5dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#c6c6c6"
+                android:textCursorDrawable="@null"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/eventTimePickerEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/login_edittext_underlined"
+                android:drawableLeft="@drawable/email_new"
+                android:drawablePadding="15dp"
+                android:focusableInTouchMode="false"
+                android:fontFamily="sans-serif"
+                android:hint="Event Time"
+                android:paddingBottom="5dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#c6c6c6"
+                android:textCursorDrawable="@null"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/eventTagsPanel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/addTagLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#1d1d1d"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/imageAddTag"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="10dp"
+                        android:onClick="btnAddTagOnClick"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/icon_add" />
+
+                    <TextView
+                        android:id="@+id/hashSign"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="60dp"
+                        android:layout_marginTop="8dp"
+                        android:text="#"
+                        android:textColor="#FFFFFF"
+                        android:textSize="26sp" />
+
+                    <EditText
+                        android:id="@+id/eventTag"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="4dp"
+                        android:layout_toRightOf="@id/hashSign"
+                        android:background="@drawable/login_edittext_underlined"
+                        android:fontFamily="sans-serif"
+                        android:hint="Tag 1"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="12dp"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#c6c6c6"
+                        android:textCursorDrawable="@null"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/hashSign2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/hashSign"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="60dp"
+                        android:layout_marginTop="26dp"
+                        android:text="#"
+                        android:textColor="#FFFFFF"
+                        android:textSize="26sp" />
+
+                    <EditText
+                        android:id="@+id/eventTag2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/eventTag"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_toRightOf="@id/hashSign2"
+                        android:background="@drawable/login_edittext_underlined"
+                        android:fontFamily="sans-serif"
+                        android:hint="Tag 2"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="12dp"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#c6c6c6"
+                        android:textCursorDrawable="@null"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:paddingTop="7dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:text="Choose Event Category: "
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="8dp"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Competition"
+                        android:buttonTint="#FFFFFF"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:layout_marginTop="8dp"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Non-Technical Event"
+                        android:buttonTint="#FFFFFF"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:layout_marginTop="8dp"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Motivational Event"
+                        android:buttonTint="#FFFFFF"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:layout_marginTop="8dp"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Informational Event"
+                        android:buttonTint="#FFFFFF"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:layout_marginTop="8dp"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Career Development"
+                        android:buttonTint="#FFFFFF"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:layout_marginTop="8dp"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Industrial Visit"
+                        android:buttonTint="#FFFFFF"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:layout_marginTop="8dp"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Project Exhibition"
+                        android:buttonTint="#FFFFFF"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:layout_marginTop="8dp"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Workshop"
+                        android:buttonTint="#FFFFFF"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:layout_marginTop="8dp"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Other"
+                        android:buttonTint="#FFFFFF"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:layout_marginTop="8dp"/>
+                </RadioGroup>
+            </LinearLayout> -->
+
+            <Button
+                android:id="@+id/btnNextEventFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btn_login"
+                android:fontFamily="sans-serif"
+                android:text="Add this Event"
+                android:textColor="@drawable/btn_login_color"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

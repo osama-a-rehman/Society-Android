@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#1d1d1d"
+    android:padding="8dp"
+    android:id="@+id/addTagLayout">
+
+    <TextView
+        android:text="#"
+        android:textColor="#FFFFFF"
+        android:textSize="26sp"
+        android:layout_marginLeft="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="60dp"
+        android:id="@+id/hashSign" />
+
+    <EditText
+        android:id="@+id/eventTag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_toRightOf="@id/hashSign"
+        android:background="@drawable/login_edittext_underlined"
+        android:fontFamily="sans-serif"
+        android:hint="Tag 1"
+        android:layout_marginLeft="4dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="10dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#c6c6c6"
+        android:textCursorDrawable="@null"
+        android:textSize="20sp" />
+</RelativeLayout>

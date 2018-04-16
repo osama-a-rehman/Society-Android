@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Society</string>
+
+    <string name="login_username_hint">Username</string>
+    <string name="login_password_hint">Password</string>
+    <string name="button_sign_in">Sign In</string>
+    <string name="do_no_have_account">Don\'t have an account</string>
+    <string name="text_sign_up">Sign Up</string>
+    <string name="text_sign_in">Sign In</string>
+
+    <string name="login_enter_username_toast">Please enter your username</string>
+    <string name="login_enter_email_toast">Please enter your email</string>
+    <string name="login_enter_password_toast">Please enter your password</string>
+    <string name="login_enter_password_8_char_toast">Password should be atleast 8 characters long</string>
+    <string name="login_enter_society_image">Please insert Society\'s Logo</string>
+
+    <string name="sign_up_email_hint">Email</string>
+    <string name="sign_up_password_hint">Password</string>
+    <string name="sign_up_society_name_hint">Society Name</string>
+    <string name="sign_up_president_name_hint">President\'s Name</string>
+    <string name="sign_up_contact_hint">Contact #</string>
+
+    <string name="sign_up_add_more_details">ADD MORE DETAILS</string>
+    <string name="already_registered">Already Registered ? </string>
+
+    <string name="sign_up_enter_president_toast">Please enter President\'s Name</string>
+    <string name="sign_up_enter_society_toast">Please enter Society\'s Name</string>
+    <string name="sign_up_enter_contact_toast">Please enter your Contact #</string>
+    <string name="title_activity_events">EventsActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
